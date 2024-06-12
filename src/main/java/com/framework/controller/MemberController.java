@@ -26,7 +26,7 @@ public class MemberController {
     public String showMembers(Model model) {
         List<MemberDTO> members = memberService.getAllMembers(0, 10);
         model.addAttribute("members", members);
-        return "/members.html";  // 確保這個路徑對應到您的模板名稱
+        return "members";  // 確保這個路徑對應到您的模板名稱
     }
 
 

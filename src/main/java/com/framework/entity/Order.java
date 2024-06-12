@@ -24,7 +24,7 @@ public class Order {
     private String productName;
     private Date orderDate;
     private Double amount;
-    private Date purchaseDate; // 新增的 purchaseDate 字段
+    private Date purchaseDate;
 
     // Getters and Setters
     public Long getId() {

@@ -12,11 +12,9 @@ public class CustomErrorController implements ErrorController {
     @RequestMapping("/error")
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR) // You can customize the response status based on error.
     public String handleError() {
-        // Log error details here if you need to.
-        return "error"; // View name for error page
+        return "error";
     }
 
-    //@Override
     public String getErrorPath() {
         return "/error";
     }
