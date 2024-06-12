@@ -17,6 +17,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/members")
+@CrossOrigin(origins = "*")
 public class MemberController {
 
     @Autowired
