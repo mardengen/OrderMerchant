@@ -22,13 +22,13 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
-    @GetMapping("/list")
+    @GetMapping("showall")
     public String showMembers(Model model) {
+        // 默认第一页，每页10个成员
         List<MemberDTO> members = memberService.getAllMembers(0, 10);
         model.addAttribute("members", members);
-        return "members";  // 確保這個路徑對應到您的模板名稱
+        return "members";
     }
-
 
     @PostMapping
     public String addMember(@RequestBody MemberDTO memberDTO, Model model) {

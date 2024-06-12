@@ -13,8 +13,9 @@ public class OrderDTO {
     private String productName;
     private Date orderDate;
     private Long memberId;
-    private Date purchaseDate;
+    private Date purchaseDate; // 新增的 purchaseDate
 
+    // Getters and Setters
     public Long getId() {
         return id;
     }

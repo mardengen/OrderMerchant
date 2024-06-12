@@ -1,6 +1,5 @@
 package com.framework.controller;
 
-import ch.qos.logback.core.model.Model;
 import com.framework.dto.MemberDTO;
 import com.framework.dto.OrderDTO;
 import com.framework.dto.OrderSearchCriteria;
@@ -21,12 +20,6 @@ public class OrderController {
 
     @Autowired
     private OrderService orderService;
-
-    @GetMapping("/view")
-    public String getOrderPage(Model model) {
-        // 添加必要的模型屬性
-        return "orderPage";  // 確保這個路徑對應到您的模板名稱
-    }
 
     @PostMapping
     public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) {
