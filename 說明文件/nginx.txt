@@ -1,0 +1,44 @@
+Nginx配置
+在src/main/resources/nginx/目录下创建一个名为nginx.conf的文件，并添加以下配置：
+
+nginx
+# Nginx Configuration File
+# Upstream server configuration
+upstream backend {
+    server 127.0.0.1:8080;  # Spring Boot application
+}
+
+# Reverse proxy configuration
+server {
+    listen 80;
+    server_name localhost;
+
+    # Proxy requests to Spring Boot application
+    location / {
+        proxy_pass http://backend;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Serve static files
+    location /static/ {
+        alias /path/to/your/static/files/;  # Adjust this path to your actual static files location
+    }
+}
+
+配置说明
+Upstream配置: 定义一个名为backend的上游服务器，该服务器指向运行在127.0.0.1:8080的Spring Boot应用。
+反向代理配置:
+listen 80; 配置Nginx监听80端口。
+server_name localhost; 配置服务器名称。
+location / { ... } 将所有请求代理到上游服务器backend。
+静态文件服务:
+location /static/ { ... } 用于提供静态文件。调整alias路径以指向你的实际静态文件位置。
+部署Nginx
+确保你已安装Nginx，并使用以下命令来启动或重新启动Nginx服务：
+
+sudo nginx -t  # 测试配置文件
+sudo systemctl restart nginx  # 重新启动Nginx服务
+这将使Nginx充当你的Spring Boot应用程序的反向代理，同时提供静态文件服务。
