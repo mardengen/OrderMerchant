@@ -11,6 +11,7 @@
       <li class="navbar-item"><a href="#">信贷试算</a></li>
       <li class="navbar-item"><a href="#">贷款知识</a></li>
       <li class="navbar-item"><button class="apply-button">立即申请</button></li>
+      <li class="navbar-item"><button class="apply-button">會員與訂單</button></li>
     </ul>
 </div>
 </template>
