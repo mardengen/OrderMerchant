@@ -1,4 +1,4 @@
-package com.framework.entity;
+package com.framework.merchant.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

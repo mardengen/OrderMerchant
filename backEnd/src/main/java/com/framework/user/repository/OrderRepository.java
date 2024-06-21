@@ -1,7 +1,7 @@
-package com.framework.repository;
+package com.framework.user.repository;
 
-import com.framework.entity.Member;
-import com.framework.entity.Order;
+import com.framework.user.entity.Member;
+import com.framework.user.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

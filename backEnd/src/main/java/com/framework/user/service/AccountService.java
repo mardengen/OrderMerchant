@@ -1,7 +1,7 @@
-package com.framework.service;
+package com.framework.user.service;
 
-import com.framework.entity.Account;
-import com.framework.repository.AccountRepository;
+import com.framework.user.entity.Account;
+import com.framework.user.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

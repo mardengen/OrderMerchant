@@ -1,7 +1,7 @@
-package com.framework.service;
+package com.framework.merchant.service;
 
-import com.framework.entity.Product;
-import com.framework.repository.ProductRepository;
+import com.framework.merchant.entity.Product;
+import com.framework.merchant.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

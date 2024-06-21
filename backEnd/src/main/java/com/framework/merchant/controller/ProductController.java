@@ -1,7 +1,7 @@
-package com.framework.controller;
+package com.framework.merchant.controller;
 
-import com.framework.entity.Product;
-import com.framework.service.ProductService;
+import com.framework.merchant.entity.Product;
+import com.framework.merchant.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

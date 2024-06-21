@@ -1,7 +1,7 @@
-package com.framework.job;
+package com.framework.merchant.job;
 
-import com.framework.repository.ProductRepository;
-import com.framework.repository.AccountRepository;
+import com.framework.merchant.repository.ProductRepository;
+import com.framework.user.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

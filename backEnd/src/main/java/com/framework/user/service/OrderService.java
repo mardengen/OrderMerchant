@@ -1,12 +1,12 @@
-package com.framework.service;
+package com.framework.user.service;
 
-import com.framework.dto.MemberDTO;
-import com.framework.dto.OrderDTO;
-import com.framework.dto.OrderSearchCriteria;
-import com.framework.entity.Member;
-import com.framework.entity.Order;
-import com.framework.repository.MemberRepository;
-import com.framework.repository.OrderRepository;
+import com.framework.user.dto.MemberDTO;
+import com.framework.user.dto.OrderDTO;
+import com.framework.user.dto.OrderSearchCriteria;
+import com.framework.user.entity.Member;
+import com.framework.user.entity.Order;
+import com.framework.user.repository.MemberRepository;
+import com.framework.user.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;

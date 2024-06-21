@@ -1,8 +1,8 @@
-package com.framework.service;
+package com.framework.user.service;
 
-import com.framework.dto.MemberDTO;
-import com.framework.entity.Member;
-import com.framework.repository.MemberRepository;
+import com.framework.user.dto.MemberDTO;
+import com.framework.user.entity.Member;
+import com.framework.user.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

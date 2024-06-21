@@ -1,4 +1,4 @@
-package com.framework.dto;
+package com.framework.user.dto;
 
 /**
  *@author: Joshma

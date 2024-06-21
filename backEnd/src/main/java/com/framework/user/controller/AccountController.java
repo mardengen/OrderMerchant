@@ -1,7 +1,7 @@
-package com.framework.controller;
+package com.framework.user.controller;
 
-import com.framework.entity.Account;
-import com.framework.service.AccountService;
+import com.framework.user.entity.Account;
+import com.framework.user.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,6 +1,6 @@
-package com.framework.repository;
+package com.framework.merchant.repository;
 
-import com.framework.entity.Product;
+import com.framework.merchant.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {

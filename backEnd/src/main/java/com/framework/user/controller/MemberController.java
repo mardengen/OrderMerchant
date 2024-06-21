@@ -1,7 +1,7 @@
-package com.framework.controller;
+package com.framework.user.controller;
 
-import com.framework.dto.MemberDTO;
-import com.framework.service.MemberService;
+import com.framework.user.dto.MemberDTO;
+import com.framework.user.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

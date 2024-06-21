@@ -1,9 +1,9 @@
-package com.framework.controller;
+package com.framework.user.controller;
 
-import com.framework.dto.MemberDTO;
-import com.framework.dto.OrderDTO;
-import com.framework.dto.OrderSearchCriteria;
-import com.framework.service.OrderService;
+import com.framework.user.dto.MemberDTO;
+import com.framework.user.dto.OrderDTO;
+import com.framework.user.dto.OrderSearchCriteria;
+import com.framework.user.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
