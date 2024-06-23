@@ -13,9 +13,18 @@ public class OrderDTO {
     private String productName;
     private Date orderDate;
     private Long memberId;
-    private Date purchaseDate; // 新增的 purchaseDate
-
+    private Date purchaseDate;
+    private Double Amount;
     // Getters and Setters
+    public Double getAmount() {
+        return Amount;
+    }
+
+    public void setAmount(Double id) {
+        this.Amount = Amount;
+    }
+
+
     public Long getId() {
         return id;
     }

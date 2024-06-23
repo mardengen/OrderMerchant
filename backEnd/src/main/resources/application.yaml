@@ -12,3 +12,14 @@ spring.sql.init.mode=always
 spring.jpa.hibernate.ddl-auto=update
 server.port=8081
 server.error.whitelabel.enabled=true
+#  配置中心  與網關轉發
+spring:
+  application:
+    name: merchant-order-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
